@@ -1,0 +1,54 @@
+{% load static tailwind_tags %}
+
+<style>
+    /* Personalización de estilos adicionales */
+    .dark-overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .service-card {
+        border-radius: 10px;
+        overflow-x: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+        transform: scale(1.05);
+        overflow-x: hidden;
+    }
+
+    .service-card img {
+        display: block;
+        margin: 0 auto; /* Centrar la imagen */
+        margin-bottom: 10px; /* Agregar espacio entre la imagen y el título */
+    }
+</style>
+
+<!-- Sección de Servicios -->
+<section class="py-16 dark-overlay">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-8 py-5">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Servicio 1: Filtro de Vendedores y Compradores -->
+            <div class="bg-gray-200 p-6 rounded-lg shadow-lg service-card">
+                <img src="{% static 'img/home/sell-and-buy.png' %}" alt="Filtro de Vendedores y Compradores" width="150" height="150">
+                <h3 class="text-xl font-semibold mb-4">Filtro de Vendedores y Compradores</h3>
+                <p class="text-gray-700 mb-4">Configura fácilmente un filtro por cantidad a negociar, fiat, stable coin, bancos y porcentaje de ganancia. No te preocupes más.</p>
+            </div>
+
+            <!-- Servicio 2: Filtro de Vendedores Recurrentes -->
+            <div class="bg-gray-200 p-6 rounded-lg shadow-lg service-card">
+                <img src="{% static 'img/home/recurretentes.png' %}" alt="Filtro de Vendedores Recurrentes" width="150" height="150">
+                <h3 class="text-xl font-semibold mb-4">Filtro de Vendedores Recurrentes</h3>
+                <p class="text-gray-700 mb-4">Filtra vendedores con más ofertas y muestra los bancos más usados. Personaliza notificaciones según tu fiat y tendras tablas para mejorar tu estrategia de trading.</p>
+            </div>
+
+            <!-- Servicio 3: Notificaciones 24/7 -->
+            <div class="bg-gray-200 p-6 rounded-lg shadow-lg service-card">
+                <img src="{% static 'img/home/notificaciones.png' %}" alt="Notificaciones 24/7" width="150" height="150">
+                <h3 class="text-xl font-semibold mb-4">Notificaciones 24/7</h3>
+                <p class="text-gray-700 mb-4">Recibe las mejores oportunidades y ofertas en tiempo real. Nuestra aplicación te notificará para que no te pierdas ninguna oportunidad de arbitraje.</p>
+            </div>
+        </div>
+    </div>
+</section>

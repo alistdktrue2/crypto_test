@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock title %}
+{% block extra_head %}{% endblock extra_head %}
+
+
+
+
+{% block navbar %}
+{% include "components/navbar.html" %}
+{% endblock navbar %}
+
+
+{% block content %}
+{% include 'pages/home/header.html' %}
+{% include 'pages/home/Feature.html' %}
+{% include 'pages/home/Feature2.html' %}
+{% include 'pages/home/Feature3.html' %}
+{% include 'pages/home/Feature4.html' %}
+{% include 'pages/home/Feature5.html' %}
+
+{% endblock content %}
+
+
+{% block footer %}
+{% include 'components/footer.html' %}
+
+{% endblock footer %}
+
+
+{% block javascript %}{% endblock javascript %}
+

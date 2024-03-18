@@ -1,0 +1,33 @@
+{% load static tailwind_tags %}
+
+<section class="bg-white py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">¡Empezá a arbritrar en 3 simples pasos!</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Tarjeta 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="{% static 'img/home/crear_cuenta.png' %}" alt="Paso 1" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">1. Creá tu cuenta</h3>
+                <p class="text-gray-700">Registrate Gratis/Pago.</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="{% static 'img/home/filtros_config.png' %}" alt="Paso 2" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">2. Configura los filtros</h3>
+                <p class="text-gray-700">Ajusta por tipo de token (ejemp:usdt),Capital a trabajar,fiat (ejemp:usd),Bancos a usar, porcentaje de ganancia(opcional).</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="{% static 'img/home/invertir.png' %}" alt="Paso 3" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">3. Explorá e Invertí</h3>
+                <p class="text-gray-700">Dependiendo de si la cuenta es gratis o pago, en este paso explorar si eres gratis y esperar notificaciones si eres pago.</p>
+            </div>
+        </div>
+
+        <!-- Botón de Suscripción -->
+        <button class="mt-8 bg-green-600 focus:ring-2 focus:ring-inset hover:bg-orange-500 text-white  font-medium py-2 px-4 rounded-full">Comienza Ya!</button>
+    </div>
+</section>

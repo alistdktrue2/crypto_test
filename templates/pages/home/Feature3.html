@@ -1,0 +1,89 @@
+{% load static tailwind_tags %}
+
+<style>
+    .reasons-section {
+        background-color: #ffffff;
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .reasons-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        flex: 0 0 40%;
+    }
+
+    .reason {
+        padding-left: 30px;
+        margin-bottom: 40px;
+        flex: 0 0 40%;
+    }
+
+    .reason-image {
+        display: block;
+        margin: 0 auto;
+        width: 1fr; /* Usar fracciones en lugar de porcentaje */
+        margin-left: 2rem; /* Agregar margen izquierdo según sea necesario */
+    }
+
+    .reason-icon {
+        margin-bottom: 20px;
+    }
+
+    .reason-content h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .reason-content p {
+        font-size: 1rem;
+        color: #555555;
+    }
+</style>
+
+<!-- Sección de Cuatro Buenas Razones -->
+<section class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="reasons-title py-20 italic">💎 4 buenas razones para usar nuestros servicios💎</h2>
+
+        <div class="reasons-section">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Imagen (solo se muestra en pantallas grandes) -->
+                <div class="reason-image hidden sm:block">
+                    <img src="{% static 'img/home/security.svg' %}" alt="Imagen" class="object-cover w-full h-full">
+                </div>
+                
+                <div class="container mx-auto flex flex-wrap">
+                    <div class="reason">
+                        <!-- Razón 1 -->
+                        <div class="reason-icon">
+                            <img src="{% static 'img/home/rapido_eficiente.png' %}" alt="Icono 1" width="80" height="80">
+                        </div>
+                        <div class="reason-content">
+                            <h3>Servicio rápido, eficiente y experto</h3>
+                            <p>En el competitivo mundo de las transacciones financieras, la velocidad y eficiencia son fundamentales...</p>
+                        </div>
+                    </div>
+
+                    <div class="reason">
+                        <!-- Razón 4 -->
+                        <div class="reason-icon">
+                            <img src="{% static 'img/home/un_paso.png' %}" alt="Icono 4" width="50" height="60">
+                        </div>
+                        <div class="reason-content">
+                            <h3>Un Paso por delante! Notificación 24/7</h3>
+                            <p>Te liberamos de horas interminables de revisar manualmente páginas de vendedores y compradores...</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>

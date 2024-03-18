@@ -1,0 +1,107 @@
+{% load static tailwind_tags %}
+
+<style>
+    .reasons-section {
+        background-color: #ffffff; /* Fondo blanco */
+        padding: 80px 0; /* Ajusta el espacio interno según sea necesario */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .reasons-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        flex: 0 0 40%; /* Ajusta el ancho del título según sea necesario */
+    }
+
+    .reason {
+        padding-left:30px;
+        margin-bottom: 40px; /* Espacio entre cada razón */
+        flex: 0 0 40%; /* Ajusta el ancho de cada razón según sea necesario */
+    }
+
+    .reason-image {
+        height: auto;
+        width: 80%; /* Ajusta el ancho de la imagen según sea necesario */
+    }
+
+    .reason-icon {
+        margin-bottom: 20px;
+    }
+
+    .reason-content h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .reason-content p {
+        font-size: 1rem;
+        color: #555555;
+    }
+</style>
+
+<!-- Sección de Cuatro Buenas Razones -->
+
+<h2 class="reasons-title py-20 italic">💎 4 buenas razones para usar nuestros servicios💎</h2>
+
+<section class="reasons-section">
+    <div class="container mx-auto flex flex-wrap">
+        <div class="reason">
+            <!-- Razón 1 -->
+            <div class="reason-icon">
+                <!-- Reemplaza 'icono1.png' con el nombre de tu icono -->
+                <img src="{% static 'img/home/rapido_eficiente.png' %}" alt="Icono 1" width="80" height="80">
+            </div>
+            <div class="reason-content">
+                <h3>Servicio rápido, eficiente y experto</h3>
+                <p>En el competitivo mundo de las transacciones financieras, la velocidad y eficiencia son fundamentales. Nos destacamos por nuestra rapidez, eficacia y enfoque experto. Nuestros algoritmos especializados trabajan incansablemente para calcular las mejores opciones en tiempo real. Actuamos con rapidez sin sacrificar la precisión, respaldando cada decisión con una experiencia algorítmica que analiza datos a una velocidad asombrosa.</p>
+            </div>
+        </div>
+
+        <div class="reason">
+            <!-- Razón 2 -->
+            <div class="reason-icon">
+                <!-- Reemplaza 'icono2.png' con el nombre de tu icono -->
+                <img src="{% static 'img/home/administrador_servicios.png' %}" alt="Icono 2" width="80" height="80">
+            </div>
+            <div class="reason-content">
+                <h3>Un administrador de cuenta a su servicios</h3>
+                <p>A cada cliente le es asignado un panel administrador de cuenta, para la gestión de sus filtros y visualizar los datos.</p>
+            </div>
+        </div>
+
+        <div class="reason">
+            <!-- Razón 3 -->
+            <div class="reason-icon">
+                <!-- Reemplaza 'icono3.png' con el nombre de tu icono -->
+                <img src="{% static 'img/home/fiabilidad_rendimiento.png' %}" alt="Icono 3" width="80" height="80">
+            </div>
+            <div class="reason-content">
+                <h3>Fiabilidad & Rendimiento</h3>
+                <p>En cuanto al rendimiento, entendemos la importancia de la velocidad y la eficiencia en el entorno dinámico del mercado. Nuestra plataforma está diseñada para brindar un rendimiento excepcional, permitiéndote acceder rápidamente a las oportunidades de trading y tomar decisiones informadas al instante.</p>
+            </div>
+        </div>
+
+        <div class="reason">
+            <!-- Razón 4 -->
+            <div class="reason-icon">
+                <!-- Reemplaza 'icono4.png' con el nombre de tu icono -->
+                <img src="{% static 'img/home/un_paso.png' %}" alt="Icono 4" width="50" height="60">
+            </div>
+            <div class="reason-content">
+                <h3>Un Paso por delante! Notificación 24/7</h3>
+                <p>Te liberamos de horas interminables de revisar manualmente páginas de vendedores y compradores, enfrentándote a 80 paginas de transacciones, ¡y eso en una sola stable coin! Mientras otros aún buscan oportunidades, nuestro sistema de notificación escanea y muestra las mejores oportunidades al instante, enviándote alertas directo a tu móvil. Ahorra tiempo valioso y supera a quienes siguen haciendo las cosas manualmente. ¡Invierte en eficiencia, invierte en estar a un paso por adelante!.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Imagen -->
+    <div class="reason-image">
+        <!-- Reemplaza 'imagen.png' con el nombre de tu imagen -->
+        <img class="skew-y-6" src="{% static 'img/home/security.svg' %}" alt="Imagen" class="object-cover w-full h-full">
+    </div>
+</section>

@@ -1,0 +1,45 @@
+{% load static tailwind_tags %}
+
+<style>
+    .crypto-banner {
+        width: 100%;
+
+        animation: marquee 20s linear infinite;
+    }
+    .cards_carousel__GWy {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .crypto-icons {
+        display: inline-block;
+        /* Ajusta el tamaño según sea necesario */
+        width: 1000px;
+    }
+    
+
+    /* Otras propiedades de estilo según tus preferencias */
+ 
+
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+</style>
+
+<div class="banner_cryptos">
+    <section class="crypto-banner">
+        <div class="cards_carousel__GWy">
+            <img src="{% static 'img/home/banner_cryptos.png' %}" alt="Crypto Icons" class="crypto-icons">
+        </div>
+    </section>
+</div>

@@ -1,0 +1,40 @@
+{% load static tailwind_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>Document</title>{% endblock title %}
+    {% block extra_head %}{% endblock extra_head %}
+    {% tailwind_css %}
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
+
+    <!--Alpine JS-->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+    
+    
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Agrega el enlace de la biblioteca Slick Carousel (puedes usar el CDN o descargarla) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+    <!--Stripe-->
+    <script src="https://js.stripe.com/v3/"></script>
+    
+</head>
+<body>
+    {% block navbar %}{% endblock navbar %}
+
+    {% block content %}{% endblock content %}
+
+    {% include 'messages.html' %}
+
+    {% block footer %}{% endblock footer %}
+
+    {% block javascript %}{% endblock javascript %}
+    
+</body>
+</html>

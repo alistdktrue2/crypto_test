@@ -1,0 +1,13 @@
+django
+django-environ
+pillow
+stripe
+django-allauth
+django-tailwind
+django-crispy-forms
+crispy-tailwind
+psycopg2
+djangorestframework
+
+
+

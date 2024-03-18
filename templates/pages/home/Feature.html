@@ -1,0 +1,174 @@
+{% load static tailwind_tags %}
+
+<style>
+    .cards_carousel__GWyo0 {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .slick-slide {
+        display: none;
+        float: left;
+        height: 40%;
+        min-height: 1px;
+    }
+
+    /* Ajustes adicionales para garantizar el ancho y la altura adecuados */
+    .slick-track {
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    .slick-slide {
+        height: auto !important;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .slick-list {
+        overflow: initial;
+    }
+
+    /* Espaciado entre las tarjetas */
+    .slick-prev,
+    .slick-next {
+        margin-top: -50px; /* Ajusta la posición vertical de los botones según sea necesario */
+    }
+
+    .slick-slide {
+        margin: 0 10px; /* Ajusta el espacio entre las tarjetas horizontalmente */
+    }
+
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+
+</style>
+
+<div class="cards_carouselContainer__2Pd1Q">
+    <div class="cards_carousel__GWyo0 max-h-screen overflow-y-auto">
+        <!-- Repite estas tarjetas según sea necesario -->
+        <div class="cards_ mb-6 bg-white rounded-lg shadow-xl grid grid-cols-3 p-4">
+            <div class="flex items-center justify-start col-span-1">
+                <img src="{% static 'img/home/usdt.svg' %}" alt="USDT" width="36" height="36">
+            </div>
+            <div class="col-span-2">
+                <p class="font-bold text-xl">USDT</p>
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <div class="font-medium"><p>Compra</p></div>
+                    <div class="font-medium text-right"><p><span>AR$</span>1.200,00</p></div>
+                    <div class="font-medium"><p>Venta</p></div>
+                    <div class="font-medium text-right"><p><span>AR$</span>1.150,00</p></div>
+                </div>
+                <button type="button" class="mt-2 w-full bg-indigo-500 font-medium text-white py-2 rounded-md">Estable</button>
+            </div>
+        </div>
+  
+        <div class="cards_ mb-6 bg-white rounded-lg shadow-xl grid grid-cols-3 p-4">
+          <div class="flex items-center justify-start col-span-1">
+              <img src="{% static 'img/home/usdc.svg' %}" alt="USDC" width="36" height="36">
+          </div>
+          <div class="col-span-2">
+              <p class="font-bold text-xl">USDC</p>
+              <div class="grid grid-cols-2 gap-2 mt-2">
+                  <div class="font-medium"><p>Compra</p></div>
+                  <div class="font-medium text-right"><p><span>AR$</span>1.245,00</p></div>
+                  <div class="font-medium"><p>Venta</p></div>
+                  <div class="font-medium text-right"><p><span>AR$</span>1.184,00</p></div>
+              </div>
+              <button type="button" class="mt-2 w-full bg-indigo-500 font-medium text-white py-2 rounded-md">Estable</button>
+          </div>
+        </div>
+  
+        <div class="cards_ cards_ mb-6 bg-white rounded-lg shadow-xl grid grid-cols-3 p-4">
+          <div class="flex items-center justify-start col-span-1">
+              <img src="{% static 'img/home/FDUSD.png' %}" alt="FDUSD" width="36" height="36">
+          </div>
+          <div class="col-span-2">
+              <p class="font-bold text-xl">FDUSD</p>
+              <div class="grid grid-cols-2 gap-2 mt-2">
+                  <div class="font-medium"><p>Compra</p></div>
+                  <div class="font-medium text-right"><p><span>AR$</span>1.125,00</p></div>
+                  <div class="font-medium"><p>Venta</p></div>
+                  <div class="font-medium text-right"><p><span>AR$</span>1.143,00</p></div>
+              </div>
+              <button type="button" class="mt-2 w-full bg-indigo-500 font-medium text-white py-2 rounded-md">Estable</button>
+          </div>
+        </div>
+  
+        <div class="cards_ mb-6 bg-white rounded-lg shadow-xl grid grid-cols-3 p-4">
+          <div class="flex items-center justify-start col-span-1">
+              <img src="{% static 'img/home/eth.png' %}" alt="ETH" width="36" height="36">
+          </div>
+          <div class="col-span-2">
+              <p class="font-bold text-xl">ETH</p>
+              <div class="grid grid-cols-2 gap-2 mt-2">
+                  <div class="font-medium"><p>Compra</p></div>
+                  <div class="font-medium text-right"><p><span>AR$</span>1.225,00</p></div>
+                  <div class="font-medium"><p>Venta</p></div>
+                  <div class="font-medium text-right"><p><span>AR$</span>1.193,00</p></div>
+              </div>
+              <button type="button" class="mt-2 w-full bg-indigo-500 font-medium text-white py-2 rounded-md">Estable</button>
+          </div>
+        </div>
+
+        <div class="cards_ mb-6 bg-white rounded-lg shadow-xl grid grid-cols-3 p-4">
+            <div class="flex items-center justify-start col-span-1">
+                <img src="{% static 'img/home/dai.svg' %}" alt="DAI" width="36" height="36">
+            </div>
+            <div class="col-span-2">
+                <p class="font-bold text-xl">DAI</p>
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <div class="font-medium"><p>Compra</p></div>
+                    <div class="font-medium text-right"><p><span>AR$</span>1.225,00</p></div>
+                    <div class="font-medium"><p>Venta</p></div>
+                    <div class="font-medium text-right"><p><span>AR$</span>1.193,00</p></div>
+                </div>
+                <button type="button" class="mt-2 w-full bg-indigo-500 font-medium text-white py-2 rounded-md">Estable</button>
+            </div>
+        </div>
+
+        <div class="cards_ mb-6 bg-white rounded-lg shadow-xl grid grid-cols-3 p-4">
+            <div class="flex items-center justify-start col-span-1">
+                <img src="{% static 'img/home/busd.svg' %}" alt="BUSD" width="36" height="36">
+            </div>
+            <div class="col-span-2">
+                <p class="font-bold text-xl">BUSD</p>
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <div class="font-medium"><p>Compra</p></div>
+                    <div class="font-medium text-right"><p><span>AR$</span>1.225,00</p></div>
+                    <div class="font-medium"><p>Venta</p></div>
+                    <div class="font-medium text-right"><p><span>AR$</span>1.193,00</p></div>
+                </div>
+                <button type="button" class="mt-2 w-full bg-indigo-500 font-medium text-white py-2 rounded-md">Estable</button>
+            </div>
+        </div>
+
+        <!-- Repite el bloque anterior para cada criptomoneda -->
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    // Inicializa el carrusel
+    $(document).ready(function(){
+        $('.cards_carousel__GWyo0').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: '<div class="cards_fade__N63p2 cards_left__8pIxd"></div>',
+            nextArrow: '<div class="cards_fade__N63p2"></div>',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+            ],
+        });
+    });
+</script>

@@ -1,0 +1,58 @@
+{% load static tailwind_tags %}
+<main>
+  <style>
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes blink-caret {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .animate-text {
+      display: inline-block;
+      vertical-align: bottom;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.1em solid #F97316; /* Ajusta el color del cursor */
+      animation: typing 2s steps(35, end), blink-caret 0.5s step-end infinite;
+    }
+  </style>
+
+  <div class="relative px-6 lg:px-8">
+    <div class="mx-auto max-w-full lg:mx-12 xl:pt-40 xl:pb-32 sm:pt-48 sm:pb-12">
+      <div class="text-left mb-8 sm:mb-16"> <!-- Ajusta la clase mb-8 para móviles y mb-16 para pantallas más grandes -->
+        <p class="text-2xl text-gray-950 font-bold tracking-tight pb-4 sm:pb-8">Recibe notificaciones en tiempo real 24/7. <i class='text-orange-500 bx bxs-bell bx-tada'></i></p>
+        <p class="text-2xl text-gray-950 font-bold tracking-tight pb-4 sm:pb-8">
+          Tu camino más inteligente hacia <span class="text-orange-500">las mejores,<br>ofertas de criptomonedas.</span>
+        </p>
+        <h1 class="text-4xl font-bold tracking-tight pb-4 sm:pb-8">
+          P2P Las Mejores <span class='animate-text text-orange-500' data-text='Ventas, Compras, Bancas, Brechas!'></span>
+        </h1>
+        <button class="mt-8 bg-green-600 focus:ring-2 focus:ring-inset hover:bg-orange-500 text-white font-medium py-2 px-4 rounded-full">Empieza Ya!</button>
+      </div>
+      <div class="hidden sm:block absolute inset-x-0 top-[calc(100%-30rem)] -z-10 transform-gpu overflow-hidden blur-ms sm:top-[calc(100%-50rem)]">
+        <img src="{% static 'img/home/bannerscryptobrecha2.jpg' %}" class='w-full h-full object-cover'></img>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const textElement = document.querySelector('.animate-text');
+      const texts = textElement.getAttribute('data-text').split(', ');
+
+      let index = 0;
+
+      function updateText() {
+        textElement.textContent = texts[index];
+        index = (index + 1) % texts.length;
+      }
+
+      setInterval(updateText, 3000); // Cambia el texto cada 2 segundos
+    });
+  </script>
+</main>
